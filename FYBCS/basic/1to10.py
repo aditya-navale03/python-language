@@ -2,13 +2,14 @@ import os
 
 i = 1
 while i < 11:
-    # Create or modify a file here (optional, based on your use case)
-    # For example: open("file.txt", "w").write(f"Change {i}")
+    # Modify a file (for example, creating or updating a text file with the current iteration number)
+    with open("file.txt", "w") as f:
+        f.write(f"Change {i}\n")
     
-    # Stage all changes
+    # Stage the changes
     os.system("git add .")
     
-    # Commit with a message based on the loop index
+    # Commit with a dynamic message
     os.system(f'git commit -m "Commit number {i}"')
     
     # Push to the main branch
