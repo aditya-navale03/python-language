@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 import random
 
 # Configuration
-REPO_NAME = "my-attractive-graph"
+REPO_NAME = "python-language"
 COMMIT_COUNT = 40
 
 # Create and enter the repo directory
